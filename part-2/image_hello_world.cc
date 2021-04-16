@@ -59,6 +59,26 @@ int main(int argc, char* argv[]) {
   // TODO: Write an outer for loop for every column starting
   // at (image.height() - 1) and continuing while column is greater than
   // or equal to 0. Count down from (image.height() - 1) towards 0.
+  for(int column = (image.height() -1); column >= 0; column--){
+    for(int row = 0; row < image.width(); row++){
+      int red;
+      double r = double(red);
+      r = row / (image.width() - 1);
+
+      int green;
+      double g = double(green);
+      g = column / (image.height() - 1);
+
+      int blue = 0.25;
+      double b = double(blue);
+
+      int i_red = lround(255.0 * r);
+      int i_green = lround(255.0 * g);
+      int i_blue = lround(255.0 * b);
+      image.write(i_red, i_green, i_blue);
+
+    }
+  }
     // TODO: Write an inner for loop for every row starting at 0 and
     // continuing while row is less than the image.width(). Count up
     // from 0 towards image.width().
