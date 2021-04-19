@@ -1,7 +1,8 @@
 
 #include <iostream>
-
 using namespace std;
+
+#include "vec3.h"
 
 /// Entry point to the vec_demo program
 /// \remark The program does not have any commad line arguments.
