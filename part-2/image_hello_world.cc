@@ -1,4 +1,13 @@
-
+// Raxel Ortiz
+// CPSC 120-05
+// 2021-04-20
+// raxelortiz7@csu.fullerton.edu
+// @raxelortiz7
+//
+// Lab 09-02
+//
+// This program displays a colorful image!
+//
 #include <cmath>
 #include <iostream>
 #include <sstream>
@@ -56,33 +65,25 @@ int main(int argc, char* argv[]) {
     exit(1);
   }
 
-  // TODO: Write an outer for loop for every column starting
+  // Write an outer for loop for every column starting
   // at (image.height() - 1) and continuing while column is greater than
   // or equal to 0. Count down from (image.height() - 1) towards 0.
   for(int column = (image.height() -1); column >= 0; column--){
     for(int row = 0; row < image.width(); row++){
-      int red;
-      double r = double(red);
-      r = row / (image.width() - 1);
 
-      int green;
-      double g = double(green);
-      g = column / (image.height() - 1);
+      double blue = 0.25;
 
-      int blue = 0.25;
-      double b = double(blue);
-
-      int i_red = lround(255.0 * r);
-      int i_green = lround(255.0 * g);
-      int i_blue = lround(255.0 * b);
+      int i_red = row;
+      int i_green = column;
+      int i_blue = lround(255.0 * blue);
       image.write(i_red, i_green, i_blue);
 
     }
   }
-    // TODO: Write an inner for loop for every row starting at 0 and
+    // Write an inner for loop for every row starting at 0 and
     // continuing while row is less than the image.width(). Count up
     // from 0 towards image.width().
-      // TODO: Body of the for loop...
+      // Body of the for loop...
       // First we will assign a red channel, then a green, and then a blue. The 
       // red and green channels will vary across the image while the blue channel
       // stays the same through out. Initially the values are assigned floating
