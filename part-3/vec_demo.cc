@@ -1,4 +1,13 @@
-
+// Raxel Ortiz
+// CPSC 120-05
+// 2021-04-20
+// raxelortiz7@csu.fullerton.edu
+// @raxelortiz7
+//
+// Lab 09-03
+//
+// This program prints the cordinates and vectors.
+//
 #include <iostream>
 using namespace std;
 
